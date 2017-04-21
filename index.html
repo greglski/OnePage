@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Pierwsza strona OnePage</title>
+</head>
+<body>
+    <a id="top"></a>
+    <header class="header">
+       <div class="container">
+            <h1>Nazwa firmy</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae perferendis optio tempore iste nam adipisci excepturi, reiciendis exercitationem aliquid sint quas, repellendus praesentium laudantium cum. Iure saepe necessitatibus debitis officiis?</p>
+            <p><a href="#nav" class="button">Więcej</a></p>
+        </div>
+        <video src="img/film.mp4" autoplay loop muted></video>
+    </header>
+    <nav class="nav" id="nav">
+       <div class="container">
+        <ul>
+            <li><a href="#o-firmie">O firmie</a></li>
+            <li><a href="#oferta">Oferta</a></li>
+            <li><a href="#projekty">Projekty</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+        </div>
+    </nav>
+    <section class="section" id="o-firmie">
+       <div class="container">
+        <h2>O firmie</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente maxime tempore, accusantium adipisci iure incidunt recusandae iste et ea expedita eveniet voluptatibus veniam provident, fugiat praesentium quae labore sint suscipit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente maxime tempore, accusantium adipisci iure incidunt recusandae iste et ea expedita eveniet voluptatibus veniam provident, fugiat praesentium quae labore sint suscipit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente maxime tempore, accusantium adipisci iure incidunt recusandae iste et ea expedita eveniet voluptatibus veniam provident, fugiat praesentium quae labore sint suscipit.</p>
+        </div>
+    </section>
+    
+    <section class="section" id="oferta">
+       <div class="container">
+        <h2>Oferta</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente maxime tempore, accusantium adipisci iure incidunt recusandae iste et ea expedita eveniet voluptatibus veniam provident, fugiat praesentium quae labore sint suscipit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente maxime tempore, accusantium adipisci iure incidunt recusandae iste et ea expedita eveniet voluptatibus veniam provident, fugiat praesentium quae labore sint suscipit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente maxime tempore, accusantium adipisci iure incidunt recusandae iste et ea expedita eveniet voluptatibus veniam provident, fugiat praesentium quae labore sint suscipit.</p>
+        </div>
+    </section>
+    
+    <section class="section" id="projekty">
+       <div class="container">
+        <h2>Projekty</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente maxime tempore, accusantium adipisci iure incidunt recusandae iste et ea expedita eveniet voluptatibus veniam provident, fugiat praesentium quae labore sint suscipit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente maxime tempore, accusantium adipisci iure incidunt recusandae iste et ea expedita eveniet voluptatibus veniam provident, fugiat praesentium quae labore sint suscipit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente maxime tempore, accusantium adipisci iure incidunt recusandae iste et ea expedita eveniet voluptatibus veniam provident, fugiat praesentium quae labore sint suscipit.</p>
+        </div>
+    </section>
+    
+    <section class="section" id="kontakt">
+       <div class="container">
+        <h2>Kontakt</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente maxime tempore, accusantium adipisci iure incidunt recusandae iste et ea expedita eveniet voluptatibus veniam provident, fugiat praesentium quae labore sint suscipit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente maxime tempore, accusantium adipisci iure incidunt recusandae iste et ea expedita eveniet voluptatibus veniam provident, fugiat praesentium quae labore sint suscipit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente maxime tempore, accusantium adipisci iure incidunt recusandae iste et ea expedita eveniet voluptatibus veniam provident, fugiat praesentium quae labore sint suscipit.</p>
+        </div>
+    </section>
+    
+    <footer class="footer">
+       <div class="container">
+        &copy; 2017, Grzegorz Leczkowski
+            <p><a href="#top" class="button">Do góry</a></p>
+        
+        </div>
+    </footer>
+    
+
+  <div id="MyCookie">
+  <div id="tekst"></div> 
+  <div id="close"></div>
+  </div>
+    
+    
+    
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/MyCookiejQ.js"></script>
+    <script>
+        $(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+        
+        $(function(){
+            
+            $('h1,p,a').hide().delay(1000).fadeIn(8000);
+            
+        })
+
+        
+        
+    </script>
+   
+</body>
+</html>

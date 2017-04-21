@@ -1,0 +1,38 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#MyCookie {
+    position: fixed;
+    bottom: 0px;
+    min-height: 50px;
+    background-color: lightgray;
+    width: 100%;
+    border-top: 1pc solid #000;
+}
+
+#close {
+	position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+#tekst {
+	width: 85%;
+    text-align: justify;
+    padding: 5px;
+}
+
+#MyCookie a {
+    text-decoration: none;
+    color: gray;
+	
+}
+
+#MyCookie a:hover {
+    text-decoration: underline;
+    color: red;
+	
+}
